@@ -1,0 +1,16 @@
+.main-button {
+  margin: 0;
+  padding: 12px 47px 12px 46px;
+  font-family: var(--title-font);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 3.61;
+
+  color: var(--bg-color);
+  background-color: var(--primery-accent-color);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent-col);
+  }
+}
