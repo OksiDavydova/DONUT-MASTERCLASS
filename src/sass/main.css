@@ -140,7 +140,7 @@ a {
 }
 
 .program {
-  margin-bottom: 25px;
+  margin-bottom: 38px;
 }
 
 .program__text:not(:last-child) {
@@ -164,22 +164,5 @@ a {
   font-size: 14px;
   line-height: 1.21;
   color: var(--black-color);
-}
-
-.reviews__pretitle {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 4.64;
-  text-align: center;
-  color: var(--default-text-color);
-}
-
-.reviews__text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  color: var(--default-text-color);
 }
 /*# sourceMappingURL=main.css.map */
