@@ -1,22 +1,58 @@
 <!-- section rerviews -->
 <section class="reviews">
   <div class="container"></div>
-  <h2 class="title reviews__title">Reviews</h2>
+  <h2 class="section__title">Reviews</h2>
   <ul class="reviews__list">
-    <li class="list-people">
-      <img src="" alt="" />
-      <svg class="">
-        <use href=""></use>
-      </svg>
-      <h4 class="reviews__pretitle">Will</h4>
-      <p class="reviews__text">
+    <li class="reviews__item">
+      <div>
+        <!-- надо перезалить фото 
+          в формате phg и для компа и планшета -->
+        <!-- <picture>
+        <source
+            srcset="./images/desktop/ 1x"
+            srcset="./images/desktop/ 2x"
+            media="(min-width: 1280px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/tablet/ 1x"
+            srcset="./images/tablet/ 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/mobile/ 1x"
+            srcset="./images/mobile/ 2x"
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+        <img
+          class=""
+          src="./images/mobile/"
+          alt="photo Willa"
+        />
+        </picture> -->
+        <img
+          class="reviews__img"
+          width="110"
+          height="110"
+          src="./images/mobile/photo2x.jpg"
+          alt="photo Willa"
+        />
+        <!-- вставка звездочек -->
+        <!-- <svg class="" width="24" height="24">
+          <use href="./images/icons.svg#star"></use>
+        </svg> -->
+      </div>
+      <h4 class="reviews__item-name">Will</h4>
+      <article class="reviews__text">
         Last time I have visited a cooking course by Eva I was impressed with the way she explained
         everything to people. You can be sure you will manage to cook a delicious dish even if it is
         your first time in the kitchen! Thank you so much for the masterclass! Looking forward to
         the next one and highly recommend it to everyone!
-      </p>
+      </article>
     </li>
-    <li class="list-people">
+    <li class="reviews__item">
       <img src="" alt="" />
       <svg class="">
         <use href=""></use>
@@ -24,7 +60,7 @@
       <h4 class="reviews__pretitle"></h4>
       <p class="reviews__text"></p>
     </li>
-    <li class="list-people">
+    <li class="reviews__item">
       <img src="" alt="" />
       <svg class="">
         <use href=""></use>
