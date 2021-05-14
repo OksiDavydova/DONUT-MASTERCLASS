@@ -1,3 +1,41 @@
+// section about
 #more {
   display: none;
+}
+// общие стили секций about и program
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--title-font);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+  color: var(--default-text-color);
+}
+// button for section (кнопки для секций)
+.section__button {
+  border: none;
+  background-color: transparent;
+  font-family: var(--title-font);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  color: var(--primery-accent-color);
+}
+.text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--default-text-color);
+}
+// стиля для секции about
+// требует еще корректировки
+.about__text {
+  padding-bottom: 16px;
+  // &:nth-child(2) {
+  //   padding-bottom: 0;
+  // }
 }
