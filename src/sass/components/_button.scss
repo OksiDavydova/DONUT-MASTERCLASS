@@ -1,19 +1,28 @@
-.main-button {
-  margin: 0;
-  padding: 12px 47px 12px 46px;
+.button {
   border-radius: 25px;
-  border: none;
   font-family: var(--title-font);
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 0.9;
   text-align: center;
 
   color: var(--bg-color);
   background-color: var(--primery-accent-color);
-  cursor: pointer;
+  border: 1px solid var(--primery-accent-color);
+
   &:hover,
   &:focus {
-    background-color: var(--secondary-accent-col);
+    background-color: var(--bg-color);
+    border: 1px solid var(--primery-accent-color);
+
+    color: var(--default-text-color);
+  }
+
+  &__register--padding {
+    padding: 12px 46px 12px 45px;
+  }
+
+  &__send--padding {
+    padding: 12px 56px 12px 56px;
   }
 }
