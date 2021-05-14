@@ -1,13 +1,3 @@
-.footer__section {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer__container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .footer__icon {
   fill: var (--default-text-color);
   margin-left: 9px;
@@ -50,11 +40,14 @@
   margin-bottom: 51px;
 }
 
-.footer__address-list {
-  display: flex;
-  justify-content: space-between;
-}
+.footer__address {
+  margin-bottom: 20px;
 
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__tel--color {
   color: var(--default-text-color);
 }
