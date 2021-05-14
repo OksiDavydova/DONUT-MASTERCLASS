@@ -77,7 +77,9 @@ a {
 }
 
 button {
+  margin: 0;
   cursor: pointer;
+  border: none;
 }
 
 .container {
@@ -107,9 +109,7 @@ button {
 }
 
 .button {
-  margin: 0;
   border-radius: 25px;
-  border: none;
   font-family: var(--title-font);
   font-weight: normal;
   font-size: 18px;
@@ -123,11 +123,11 @@ button {
   background-color: var(--secondary-accent-col);
 }
 
-.button__register {
+.button__register--padding {
   padding: 12px 47px 12px 46px;
 }
 
-.button__send {
+.button__send--padding {
   padding: 12px 57px 12px 57px;
 }
 
