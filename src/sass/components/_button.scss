@@ -1,19 +1,27 @@
-.main-button {
+.button {
   margin: 0;
-  padding: 12px 47px 12px 46px;
+  // padding: 12px 47px 12px 46px;
   border-radius: 25px;
   border: none;
   font-family: var(--title-font);
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 0.9;
   text-align: center;
 
   color: var(--bg-color);
   background-color: var(--primery-accent-color);
-  cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: var(--secondary-accent-col);
+  }
+
+  &__register--padding {
+    padding: 12px 47px 12px 46px;
+  }
+
+  &__send--padding {
+    padding: 12px 57px 12px 57px;
   }
 }
