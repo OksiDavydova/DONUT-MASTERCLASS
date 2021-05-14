@@ -1,0 +1,30 @@
+<div class="contact">
+  <div class="contact__container">
+    <div class="contact__head">
+      <h2 class="contact__title">Contact</h2>
+      <span class="contact__span">We will answer any question!</span>
+    </div>
+    <form class="contact__form">
+      <input
+        class="contact__input line"
+        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+        type="email"
+        name="email"
+        placeholder="E-mail"
+        required
+      />
+
+      <div class="contact__field line">
+        <textarea
+          class="contact__comment"
+          name="user_message"
+          placeholder="Type your question"
+          pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+          rows="1"
+          required
+        ></textarea>
+      </div>
+      <button class="main-button" type="submit">Send</button>
+    </form>
+  </div>
+</div>
