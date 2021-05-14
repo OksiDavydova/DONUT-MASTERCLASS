@@ -8,17 +8,21 @@
 
   color: var(--bg-color);
   background-color: var(--primery-accent-color);
+  border: 1px solid var(--primery-accent-color);
 
   &:hover,
   &:focus {
-    background-color: var(--secondary-accent-col);
+    background-color: var(--bg-color);
+    border: 1px solid var(--primery-accent-color);
+
+    color: var(--default-text-color);
   }
 
   &__register--padding {
-    padding: 12px 47px 12px 46px;
+    padding: 12px 46px 12px 45px;
   }
 
   &__send--padding {
-    padding: 12px 57px 12px 57px;
+    padding: 12px 56px 12px 56px;
   }
 }
