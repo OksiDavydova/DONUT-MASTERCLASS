@@ -1,0 +1,53 @@
+.footer__icon {
+  fill: var (--default-text-color);
+  margin-left: 9px;
+}
+
+.footer__twitter--width {
+  width: 19px;
+  height: 15px;
+
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.footer__instagram--width {
+  width: 15px;
+  height: 15px;
+
+  @media screen and (min-width: 1280px) {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.footer__facebook--width {
+  width: 8px;
+  height: 15px;
+
+  @media screen and (min-width: 1280px) {
+    width: 10.27px;
+    height: 19px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 51px;
+}
+
+.footer__address {
+  margin-bottom: 20px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__tel--color {
+  color: var(--default-text-color);
+}
