@@ -1,6 +1,6 @@
 .registration {
   position: relative;
-  background: #fffff9;
+  // background: #fffff9;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
@@ -10,6 +10,7 @@
   &__container {
     display: flex;
     flex-direction: column;
+    background: #fffff9;
     box-shadow: var(--registration_box-shadow);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -101,7 +102,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       display: inline-block;
       width: 100%;
       height: 1px;
