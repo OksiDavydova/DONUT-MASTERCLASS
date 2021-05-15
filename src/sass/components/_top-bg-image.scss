@@ -1,14 +1,16 @@
 .top-bg-images {
-  background-image: url(../images/mobile/bg-donut-king.png);
+  background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
 
-  background-size: 100%;
+  background-size: 30%, 100%;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 600px) {
     background-image: url(../images/tablet/bg-donut-king.png);
+    background-size: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/desktop/bg-donut-king.png);
+    background-size: 100%;
   }
 }
