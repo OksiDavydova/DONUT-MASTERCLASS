@@ -1,14 +1,24 @@
 .bottom-bg-images {
-  background-image: url(../images/mobile/bg-reviews.png);
+  background-image: url(../images/mobile/flour.png), url(../images/mobile/bg-reviews.png);
 
-  background-size: 100%;
+  background-position: bottom right, top;
+
+  background-size: 113px, 100%;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 600px) {
-    background-image: url(../images/tablet/bg-reviews.png);
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/flour.png), url(../images/tablet/bg-reviews.png);
+
+    background-position: bottom right, top;
+
+    background-size: 147px, 100%;
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/desktop/bg-reviews.png);
+    background-image: url(../images/desktop/flour.png), url(../images/desktop/bg-reviews.png);
+
+    background-position: bottom right, top;
+
+    background-size: 130px, 100%;
   }
 }
