@@ -1,5 +1,6 @@
 //
-.reviews__pretitle {
+.reviews__item-name {
+  margin: 0;
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
@@ -13,4 +14,8 @@
   line-height: 1.25;
   text-align: center;
   color: var(--default-text-color);
+}
+.reviews__img {
+  margin-right: auto;
+  margin-left: auto;
 }
