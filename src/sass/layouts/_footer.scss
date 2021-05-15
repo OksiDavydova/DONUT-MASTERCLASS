@@ -2,7 +2,6 @@
   background-image: url(../images/mobile/flour.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
   padding-bottom: 2px;
   margin-left: auto;
   margin-right: auto;
@@ -14,6 +13,7 @@
   @media screen and (min-width: 768px) and (max-width: 1279.99px) {
     width: 761px;
     background-image: url(../images/tablet/flour.png);
+    background-size: contain;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/tablet/flour2x.png);
@@ -87,7 +87,25 @@
     display: inline-flex;
     fill: var(--default-text-color);
   }
+  &-icons:hover,
+  &-icons:focus {
+    fill: var(--primery-accent-color);
+  }
 }
 .footer__tel--color {
   color: var(--default-text-color);
+}
+
+.footer__tel--color:hover,
+.footer__tel--color:focus,
+.footer__map-link:hover,
+.footer__map-link:focus {
+  color: var(--primery-accent-color);
+  cursor: pointer;
+}
+.footer__tel--color:hover footer__address-icons,
+.footer__tel--color:focus footer__address-icons,
+.footer__map-link:hover footer__address-icons,
+.footer__map-link:focus footer__address-icons {
+  fill: var(--primery-accent-color);
 }
