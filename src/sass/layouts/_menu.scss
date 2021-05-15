@@ -1,7 +1,5 @@
 .menu__list {
   display: flex;
-  flex-wrap: wrap;
-}
-.menu__item {
-  position: absolute;
+  flex-direction: column;
+  justify-content: center;
 }
