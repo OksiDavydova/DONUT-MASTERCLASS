@@ -1,0 +1,14 @@
+.bottom-bg-images {
+  background-image: url(../images/mobile/bg-reviews.png);
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 600px) {
+    background-image: url(../images/tablet/bg-reviews.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/bg-reviews.png);
+  }
+}
