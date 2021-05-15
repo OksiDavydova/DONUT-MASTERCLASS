@@ -1,5 +1,4 @@
 .registration {
-  position: relative;
   // background: #fffff9;
   text-align: center;
   font-weight: 500;
@@ -102,7 +101,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 100%;
       height: 1px;
