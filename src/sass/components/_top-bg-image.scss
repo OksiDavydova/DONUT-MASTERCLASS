@@ -1,10 +1,10 @@
 .top-bg-images {
   background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
 
-  background-size: 30%, 100%;
+  background-size: 130px, 100%;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/bg-donut-king.png);
     background-size: 100%;
   }

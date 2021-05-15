@@ -31,11 +31,11 @@
 
 .top-bg-images {
   background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
-  background-size: 30%, 100%;
+  background-size: 130px, 100%;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .top-bg-images {
     background-image: url(../images/tablet/bg-donut-king.png);
     background-size: 100%;
@@ -52,21 +52,23 @@
 .bottom-bg-images {
   background-image: url(../images/mobile/flour.png), url(../images/mobile/bg-reviews.png);
   background-position: bottom right, top;
-  background-size: 30%, 100%;
+  background-size: 113px, 100%;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .bottom-bg-images {
-    background-image: url(../images/tablet/bg-reviews.png);
-    background-size: 100%;
+    background-image: url(../images/tablet/flour.png), url(../images/tablet/bg-reviews.png);
+    background-position: bottom right, top;
+    background-size: 147px, 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .bottom-bg-images {
-    background-image: url(../images/desktop/bg-reviews.png);
-    background-size: 100%;
+    background-image: url(../images/desktop/flour.png), url(../images/desktop/bg-reviews.png);
+    background-position: bottom right, top;
+    background-size: 130px, 100%;
   }
 }
 
@@ -664,7 +666,7 @@ button {
 }
 
 .footer__address {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .footer__address-list {
