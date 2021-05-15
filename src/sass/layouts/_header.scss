@@ -1,0 +1,26 @@
+@media screen and (max-width: 1199.98px) {
+  .navigation {
+    display: none;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 33px;
+  padding-top: 7px;
+}
+
+.mobile-menu__button {
+  background-color: transparent;
+  margin-left: 67px;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-accent-col);
+  }
+}
+.mobile-menu__icon {
+  fill: currentColor;
+}
