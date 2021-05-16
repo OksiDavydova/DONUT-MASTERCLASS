@@ -5,6 +5,10 @@
 @import './example';
 // Стили для файла с примером HTML-фрагмента
 
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
+
 
 @import "./components/top-bg-image";
 @import "./components/bottom-bg-image";
@@ -23,4 +27,7 @@
 @import "./layouts/registration";
 @import "./layouts/contact";
 @import "./layouts/footer";
+
+@import './layouts/mobile-menu';
+
 
