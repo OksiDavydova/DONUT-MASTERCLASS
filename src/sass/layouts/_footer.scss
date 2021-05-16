@@ -43,11 +43,34 @@
 .footer__address {
   padding-bottom: 20px;
 
+  @media screen and (min-width: 768px) {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+
   &-list {
     display: flex;
     justify-content: space-between;
   }
+  &-icons {
+    display: inline-flex;
+    fill: var(--default-text-color);
+    padding-right: 3px;
+  }
 }
 .footer__tel--color {
   color: var(--default-text-color);
+}
+.footer__tel--color:hover,
+.footer__tel--color:focus,
+.footer__map-link:hover,
+.footer__map-link:focus,
+.footer__tel--color:hover .footer__address-icons,
+.footer__tel--color:focus .footer__address-icons,
+.footer__map-link:hover .footer__address-icons,
+.footer__map-link:focus .footer__address-icons {
+  fill: var(--primery-accent-color);
+  color: var(--primery-accent-color);
+  cursor: pointer;
 }

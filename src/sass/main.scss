@@ -2,8 +2,9 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-@import "./example";
+@import './example';
 // Стили для файла с примером HTML-фрагмента
+
 
 @import "./components/top-bg-image";
 @import "./components/bottom-bg-image";
@@ -22,3 +23,4 @@
 @import "./layouts/registration";
 @import "./layouts/contact";
 @import "./layouts/footer";
+
