@@ -1,4 +1,3 @@
-
 .footer__icon {
   fill: var (--default-text-color);
   margin-left: 9px;
@@ -55,20 +54,21 @@
   &-icons {
     display: inline-flex;
     fill: var(--default-text-color);
-  }
-  &-icons:hover,
-  &-icons:focus {
-    fill: var(--primery-accent-color);
+    padding-right: 3px;
   }
 }
 .footer__tel--color {
   color: var(--default-text-color);
 }
-
 .footer__tel--color:hover,
 .footer__tel--color:focus,
 .footer__map-link:hover,
-.footer__map-link:focus {
+.footer__map-link:focus,
+.footer__tel--color:hover .footer__address-icons,
+.footer__tel--color:focus .footer__address-icons,
+.footer__map-link:hover .footer__address-icons,
+.footer__map-link:focus .footer__address-icons {
+  fill: var(--primery-accent-color);
   color: var(--primery-accent-color);
   cursor: pointer;
 }
