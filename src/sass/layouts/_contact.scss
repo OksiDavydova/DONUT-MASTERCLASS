@@ -79,13 +79,15 @@
 
 .contact__comment {
   resize: none;
-  height: 27px;
-  bottom: 5px;
+  min-height: 27px;
   overflow: hidden;
-  padding-bottom: 20px;
 
   &::placeholder {
     color: var(--placeholder-color-text);
     top: 25px;
+  }
+  &:focus {
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
