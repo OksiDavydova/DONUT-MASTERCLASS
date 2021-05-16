@@ -1,0 +1,17 @@
+.section__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--title-font);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+  color: var(--default-text-color);
+}
+.section__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--default-text-color);
+}
