@@ -4,13 +4,13 @@
 }
 .program__text {
   &:not(:last-child) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 // не забыть поставить pading-botton при кпопки less
 .program__item {
   &:not(:last-child) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   &::before {
     content: ">";
