@@ -2,8 +2,8 @@
 #more {
   display: none;
 }
-// общие стили секций about и program
-.title {
+// общие стили секций about и program и reviews
+.section__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,7 @@
 }
 // button for section (кнопки для секций)
 .section__button {
+  display: block;
   border: none;
   background-color: transparent;
   font-family: var(--title-font);
@@ -25,17 +26,22 @@
   text-align: center;
   color: var(--primery-accent-color);
 }
-.text {
+.section__text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   color: var(--default-text-color);
 }
-// стиля для секции about
+// стили для секции about
 // требует еще корректировки
 .about__text {
-  padding-bottom: 16px;
+  display: block;
+  padding-bottom: 25px;
   // &:nth-child(2) {
   //   padding-bottom: 0;
   // }
+}
+.about__img {
+  margin-left: auto;
+  margin-right: auto;
 }

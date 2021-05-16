@@ -5,17 +5,22 @@
 @import './example';
 // Стили для файла с примером HTML-фрагмента
 
-@import './utils/variables';
-@import './base/common';
-@import './base/container';
 
-@import './components/button';
-@import './components/modal-map';
+@import "./components/top-bg-image";
+@import "./components/bottom-bg-image";
 
-@import './layouts/about';
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/container";
 
-@import './layouts/program';
-@import './layouts/reviews';
-@import './layouts/registration';
-@import './layouts/contact';
-@import './layouts/footer';
+@import "./components/button";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+
+@import "./layouts/program";
+@import "./layouts/reviews";
+@import "./layouts/registration";
+@import "./layouts/contact";
+@import "./layouts/footer";
+
