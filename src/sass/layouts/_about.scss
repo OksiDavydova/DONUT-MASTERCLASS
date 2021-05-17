@@ -1,9 +1,5 @@
 // section about
-#more {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-}
+
 .about {
   @media screen and (min-width: 600px) {
     margin-top: 10px;
@@ -19,19 +15,10 @@
     display: flex;
     justify-content: flex-end;
   }
-}
-// button for section (кнопки для секций)
-.section__button {
-  display: block;
-  border: none;
-  background-color: transparent;
-  font-family: var(--title-font);
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-  color: var(--primery-accent-color);
-  @media screen and (min-width: 1200px) {
+
+.more {
+  display: inline;
+    @media screen and (max-width: 1199px) {
     display: none;
   }
 }
