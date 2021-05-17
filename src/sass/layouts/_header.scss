@@ -30,7 +30,6 @@
   }
 }
 
-
 .navigation {
   margin-left: 38px;
 
@@ -78,7 +77,6 @@
   background-repeat: no-repeat;
   transform: translateX(100%);
   transition: transform var(--animation);
-
 
   &.is-open {
     transform: translateX(0);
