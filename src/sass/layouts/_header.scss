@@ -1,6 +1,7 @@
 .header__container {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin-bottom: 33px;
   padding-top: 7px;
@@ -80,7 +81,9 @@
   }
 }
 .mobile-menu__btn {
-  margin-left: auto;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   border: none;
   background-color: transparent;
 
