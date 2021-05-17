@@ -4,7 +4,8 @@
  * Все паршалы подключаются сюда.
  */
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+ 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
@@ -93,6 +94,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 
 @media screen and (max-width: 599.98px) {
   .container {
@@ -222,23 +224,21 @@ button {
   padding-right: 15px;
 }
 
-@media screen and (max-width: 599.98px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
+    max-width: 320px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-left: 67px;
-    padding-right: 67px;
+    max-width: 634px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1280px;
+    max-width: 822px;
   }
 }
 
@@ -606,7 +606,7 @@ button {
 }
 
 .form__container::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 100%;
   height: 1px;
