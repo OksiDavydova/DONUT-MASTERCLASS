@@ -9,6 +9,10 @@ body {
   background-color: var(--bg-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
