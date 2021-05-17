@@ -1,0 +1,46 @@
+.social__icon {
+  fill: var (--default-text-color);
+}
+
+.social__item:not(:first-child) {
+  margin-left: 9px;
+}
+
+.social__twitter--size {
+  width: 19px;
+  height: 15px;
+
+  @media screen and (min-width: 1200px) {
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.social__instagram--size {
+  width: 15px;
+  height: 15px;
+
+  @media screen and (min-width: 1200px) {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.social__facebook--size {
+  width: 8px;
+  height: 15px;
+
+  @media screen and (min-width: 1200px) {
+    width: 10.27px;
+    height: 19px;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+}
