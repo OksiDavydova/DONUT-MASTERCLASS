@@ -1,9 +1,16 @@
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
+
 .hero__title {
   font-family: var(--title-font);
   font-style: normal;
@@ -11,13 +18,22 @@
   font-size: 30px;
   line-height: 38px;
 
-  width: 224px;
+  // width: 224px;
 }
 
 .hero__subhead {
   font-weight: 500;
-  text-align: center;
+  // text-align: center;
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 37px;
+}
+
+.hero__title--wrap {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
 }
