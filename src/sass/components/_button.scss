@@ -44,17 +44,27 @@
   }
 }
 
-.btn__more {
-  display: block;
-  border: none;
-  background-color: transparent;
-  font-family: var(--title-font);
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-  color: var(--primery-accent-color);
-  @media screen and (min-width: 1200px) {
-    display: none;
+
+
+  .btn__more {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-family: var(--title-font);
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 3.61;
+    text-align: center;
+    color: var(--primery-accent-color);
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
+}
+
+.btn__more--position {
+  display: block;
+  margin-top: 25px;
+
 }
