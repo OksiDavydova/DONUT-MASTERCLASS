@@ -1,66 +1,93 @@
 // section about
 
 .about {
-  @media screen and (min-width: 600px) {
-    margin-top: 10px;
-    position: relative;
-  }
-  @media screen and (min-width: 1200px) {
-    position: relative;
-    height: 547px;
-  }
+  position: relative;
+
+  padding-bottom: 15px;
+
+  // @media screen and (min-width: 768px) {
+  //   margin-top: 10px;
+  //   position: relative;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   position: relative;
+  //   height: 547px;
+  // }
 }
+
+.about--padding {
+  padding-top: 270px;
+}
+
 .container--flex {
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
   }
 
-.more {
-  display: inline;
-    @media screen and (max-width: 1199px) {
-    display: none;
+  .more {
+    display: inline;
+
+    @media screen and (max-width: 1199.98px) {
+      display: none;
+    }
+  }
+
+  // стили для секции about
+  // требует еще корректировки
+
+  .about__img {
+    // @media screen and (max-width: 767.98px) {
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
+    // position: absolute;
+    // top: -10%;
+    position: absolute;
+    top: -6%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      position: absolute;
+      top: 0;
+      left: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: 0;
+      left: 71px;
+      max-width: 512px;
+    }
+  }
+
+  .about__element {
+    @media screen and (min-width: 768px) {
+      justify-content: flex-end;
+      width: calc(100% / 2);
+      // margin-left: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-end;
+      width: calc((100% - 40px) / 2);
+      margin-left: 76px;
+
+      padding-top: 76px;
+    }
   }
 }
 
-// стили для секции about
-// требует еще корректировки
-.about__img {
-  @media screen and (max-width: 599.98px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 600px) and (max-width: 1199px) {
-    position: absolute;
-    top: 0;
-    left: 12px;
-  }
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 0;
-    left: 71px;
-    max-width: 512px;
-  }
-}
 .about__text {
   display: block;
-  padding-bottom: 25px;
+
+  margin-bottom: 25px;
+
+  &--margin {
+    margin-bottom: 25px;
+  }
+
   // прописать тут падинг при условиях работы #more
   // &:last-child {
   //   padding-bottom: 0;
   // }
-}
-.about__element {
-  @media screen and (min-width: 600px) {
-    justify-content: flex-end;
-    width: calc(100% / 2);
-    // margin-left: 24px;
-  }
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-end;
-    width: calc((100% - 40px) / 2);
-    margin-left: 76px;
-
-    padding-top: 76px;
-  }
 }
