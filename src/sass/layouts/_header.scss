@@ -3,12 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 33px;
   padding-top: 7px;
+  padding-bottom: 7px;
+
   @media screen and (min-width: 767.98px) {
     padding-top: 27px;
     justify-content: flex-start;
   }
+
   @media screen and (min-width: 1199.98px) {
     padding-top: 31px;
   }
@@ -71,8 +73,7 @@
   padding: 25px 20px;
   overflow-y: scroll;
   background-color: rgba(254, 243, 228, 0.9);
-  background-image: url(../images/mobile/donut-king.png),
-    url(../images/mobile/bg-donut-king.png);
+  background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
   background-size: 100px, 100%;
   background-repeat: no-repeat;
   transform: translateX(100%);
