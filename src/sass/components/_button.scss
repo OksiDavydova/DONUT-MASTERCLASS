@@ -37,13 +37,12 @@
   }
 }
 
-
 @media screen and (min-width: 767.98px) {
   .button__register--size {
     margin-top: auto;
     margin-bottom: auto;
   }
-
+}
 .btn__more {
   display: block;
   border: none;
@@ -54,8 +53,7 @@
   line-height: 3.61;
   text-align: center;
   color: var(--primery-accent-color);
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
-
 }
