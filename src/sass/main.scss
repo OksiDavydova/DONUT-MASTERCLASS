@@ -9,29 +9,27 @@
 @import './base/common';
 @import './base/container';
 
+@import './components/top-bg-image';
+@import './components/bottom-bg-image';
 
-@import "./components/top-bg-image";
-@import "./components/bottom-bg-image";
+@import './components/socials';
 
-@import "./utils/variables";
-@import "./base/common";
-@import "./base/container";
+@import './utils/variables';
+@import './base/common';
+@import './base/container';
 
-@import "./components/button";
-@import "./components/section-title";
+@import './components/button';
+@import './components/section-title';
 
-@import "./layouts/about";
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/about";
+@import './layouts/about';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
 
-
-@import "./layouts/program";
-@import "./layouts/reviews";
-@import "./layouts/registration";
-@import "./layouts/contact";
-@import "./layouts/footer";
+@import './layouts/program';
+@import './layouts/reviews';
+@import './layouts/registration';
+@import './layouts/contact';
+@import './layouts/footer';
 
 @import './layouts/mobile-menu';
-
-

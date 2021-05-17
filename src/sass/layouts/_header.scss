@@ -3,12 +3,14 @@
     display: none;
   }
 }
+
 .header__container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 33px;
+  // margin-bottom: 33px;
   padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .mobile-menu__button {

@@ -20,11 +20,26 @@
 
   &__register--padding {
     padding: 12px 46px 12px 45px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  &__register--margin {
+    margin-bottom: 45px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
   }
 
   &__send--padding {
     padding: 12px 56px 12px 56px;
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .button__register--size {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
