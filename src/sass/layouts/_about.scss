@@ -1,21 +1,21 @@
 // section about
-#more {
-  display: none;
+.more {
+  display: inline;
 }
 // общие стили секций about и program и reviews
 
 // button for section (кнопки для секций)
-.section__button {
-  display: block;
-  border: none;
-  background-color: transparent;
-  font-family: var(--title-font);
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-  color: var(--primery-accent-color);
-}
+// .section__button {
+//   display: block;
+//   border: none;
+//   background-color: transparent;
+//   font-family: var(--title-font);
+//   font-weight: normal;
+//   font-size: 18px;
+//   line-height: 3.61;
+//   text-align: center;
+//   color: var(--primery-accent-color);
+// }
 
 // стили для секции about
 // требует еще корректировки
