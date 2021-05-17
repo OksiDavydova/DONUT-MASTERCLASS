@@ -1,32 +1,66 @@
 // section about
+
+.about {
+  @media screen and (min-width: 600px) {
+    margin-top: 10px;
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    height: 547px;
+  }
+}
+.container--flex {
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
 .more {
   display: inline;
+    @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
-// общие стили секций about и program и reviews
-
-// button for section (кнопки для секций)
-// .section__button {
-//   display: block;
-//   border: none;
-//   background-color: transparent;
-//   font-family: var(--title-font);
-//   font-weight: normal;
-//   font-size: 18px;
-//   line-height: 3.61;
-//   text-align: center;
-//   color: var(--primery-accent-color);
-// }
 
 // стили для секции about
 // требует еще корректировки
+.about__img {
+  @media screen and (max-width: 599.98px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1199px) {
+    position: absolute;
+    top: 0;
+    left: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 0;
+    left: 71px;
+    max-width: 512px;
+  }
+}
 .about__text {
   display: block;
   padding-bottom: 25px;
-  // &:nth-child(2) {
+  // прописать тут падинг при условиях работы #more
+  // &:last-child {
   //   padding-bottom: 0;
   // }
 }
-.about__img {
-  margin-left: auto;
-  margin-right: auto;
+.about__element {
+  @media screen and (min-width: 600px) {
+    justify-content: flex-end;
+    width: calc(100% / 2);
+    // margin-left: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-end;
+    width: calc((100% - 40px) / 2);
+    margin-left: 76px;
+
+    padding-top: 76px;
+  }
 }
