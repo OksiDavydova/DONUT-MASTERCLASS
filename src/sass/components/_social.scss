@@ -11,3 +11,7 @@
 .social-list__link:hover {
   fill: var(--primery-accent-color);
 }
+
+.social-list__icon {
+  transition: fill var(--animation);
+}
