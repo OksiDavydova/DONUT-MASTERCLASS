@@ -1,13 +1,18 @@
 .social__icon {
-  fill: var (--default-text-color);
+  fill: var(--default-text-color);
+  transition: fill var(--animation);
 }
 
 .social__item:not(:first-child) {
-  margin-left: 9px;
+  margin-left: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .social__twitter--size {
-  width: 19px;
+  width: 18.95px;
   height: 15px;
 
   @media screen and (min-width: 1200px) {
@@ -27,11 +32,11 @@
 }
 
 .social__facebook--size {
-  width: 8px;
+  width: 9px;
   height: 15px;
 
   @media screen and (min-width: 1200px) {
-    width: 10.27px;
+    width: 11px;
     height: 19px;
   }
 }
@@ -39,8 +44,28 @@
 .social__list {
   display: flex;
   justify-content: center;
+  height: 15px;
 
   @media screen and (min-width: 768px) {
     justify-content: start;
   }
+
+  @media screen and (min-width: 1200px) {
+    height: 19px;
+  }
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  height: 15px;
+
+  @media screen and (min-width: 1200px) {
+    height: 19px;
+  }
+}
+
+.social__icon:focus,
+.social__icon:hover {
+  fill: var(--primery-accent-color);
 }
