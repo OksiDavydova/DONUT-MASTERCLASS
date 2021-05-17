@@ -4,7 +4,21 @@
 
 // section program
 .program {
-  margin-bottom: 25px;
+  @media screen and (max-width: 599.98px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 600px) {
+    margin-bottom: 0;
+  }
+}
+.program__element {
+  @media screen and (min-width: 600px) {
+    width: calc(100% / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 40px) / 2);
+    margin-right: 20px;
+  }
 }
 .program__text {
   &:not(:last-child) {
@@ -17,29 +31,54 @@
     margin-bottom: 10px;
   }
   &::before {
-    content: ">";
+    content: '>';
     padding-right: 2px;
   }
 }
 // позиционирование и стили элементов
 .program-events {
-  margin-top: 50px;
+  @media screen and (max-width: 599.98px) {
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 600px) {
+    margin-top: 30px;
+    width: calc(100% / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 40px) / 2);
+    margin-left: 20px;
+  }
 }
 
 .program-events__list {
   display: flex;
   flex-wrap: wrap;
-
-  max-width: 290px;
-  margin-left: auto;
-  margin-right: auto;
-  // margin-top: -6px;
-  // margin-left: -6px;
-  // марджин нужен пока для визуализации, можно заменить на подходящее
+  @media screen and (max-width: 599.98px) {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 600px) {
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-around;
+  }
 }
 .program-events__item {
   position: relative;
-  flex-basis: calc((100% - (3px * 2)) / 2);
+  @media screen and (max-width: 599.98px) {
+    flex-basis: calc((100% - (3px * 2)) / 2);
+    height: 142px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1199.98px) {
+    min-width: 142px;
+    height: 142px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 165px;
+    height: 165px;
+  }
   // margin-top: 6px;
   // margin-left: 6px;
 
@@ -48,21 +87,37 @@
   align-items: center;
   justify-content: flex-end;
 
-  height: 142px;
   border-radius: 50%;
   background: var(--bg-color-element);
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
   &:nth-child(2n + 1) {
-    margin-right: 6px;
+    @media screen and (max-width: 599.98px) {
+      margin-right: 6px;
+    }
+    @media screen and (min-width: 600px) {
+      margin-right: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
   }
-  // сделать позиционирование елемонтов пончиков
-  // последний пончик не получается отпозиционировать
+
   &:nth-child(n + 2) {
-    margin-top: 30px;
+    @media screen and (max-width: 599.98px) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 600px) {
+      margin-top: 33px;
+    }
   }
 
   &:last-child {
-    margin-top: 50px;
+    @media screen and (max-width: 599.98px) {
+      margin-top: 50px;
+    }
+    @media screen and (min-width: 600px) {
+      margin-top: 63px;
+    }
   }
 }
 .program-events__desc {
@@ -70,7 +125,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.28;
-  //   text-align: center;
+
   color: var(--black-color);
   margin-bottom: 13px;
 }
@@ -78,7 +133,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.21;
-  //   text-align: center;
+
   color: var(--black-color);
   margin-bottom: 13px;
 }
@@ -92,6 +147,8 @@
   }
   &--poz {
     top: -30px;
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
 
