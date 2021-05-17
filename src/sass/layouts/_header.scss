@@ -30,7 +30,6 @@
   }
 }
 
-
 .navigation {
   margin-left: 38px;
 
@@ -67,8 +66,6 @@
   align-items: center;
   padding-top: 7px;
   padding-bottom: 7px;
-}
-
   width: 100vw;
   height: 100vh;
   padding: 25px 20px;
@@ -80,7 +77,6 @@
   background-repeat: no-repeat;
   transform: translateX(100%);
   transition: transform var(--animation);
-
 
   &.is-open {
     transform: translateX(0);
