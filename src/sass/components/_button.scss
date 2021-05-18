@@ -44,6 +44,7 @@
   }
 }
 
+
 .btn__more {
   display: block;
   border: none;
@@ -65,4 +66,12 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
+  
+}
+
+
+.btn__more--position {
+  display: block;
+  margin-top: 25px;
+
 }
