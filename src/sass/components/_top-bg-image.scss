@@ -1,7 +1,10 @@
 .top-bg-images {
+  position: relative;
+  overflow: auto;
+
   background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
 
-  background-size: 130px, 100%;
+  background-size: 124px, 100%;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {

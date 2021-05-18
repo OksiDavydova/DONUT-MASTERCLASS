@@ -4,8 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
- 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
@@ -95,30 +94,29 @@ button {
   padding-right: 15px;
 }
 
-
-@media screen and (max-width: 599.98px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
+    max-width: 320px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-left: 67px;
-    padding-right: 67px;
+    max-width: 634px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1280px;
+    max-width: 822px;
   }
 }
 
 .top-bg-images {
+  position: relative;
+  overflow: auto;
   background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
-  background-size: 130px, 100%;
+  background-size: 124px, 100%;
   background-repeat: no-repeat;
 }
 
@@ -139,7 +137,7 @@ button {
 .bottom-bg-images {
   background-image: url(../images/mobile/flour.png), url(../images/mobile/bg-reviews.png);
   background-position: bottom right, top;
-  background-size: 113px, 100%;
+  background-size: 88px, 100%;
   background-repeat: no-repeat;
 }
 
@@ -147,7 +145,7 @@ button {
   .bottom-bg-images {
     background-image: url(../images/tablet/flour.png), url(../images/tablet/bg-reviews.png);
     background-position: bottom right, top;
-    background-size: 147px, 100%;
+    background-size: 167px, 100%;
   }
 }
 
@@ -155,7 +153,62 @@ button {
   .bottom-bg-images {
     background-image: url(../images/desktop/flour.png), url(../images/desktop/bg-reviews.png);
     background-position: bottom right, top;
-    background-size: 130px, 100%;
+    background-size: 335px, 100%;
+  }
+}
+
+.social__icon {
+  fill: var --default-text-color;
+}
+
+.social__item:not(:first-child) {
+  margin-left: 9px;
+}
+
+.social__twitter--size {
+  width: 19px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__twitter--size {
+    width: 24px;
+    height: 19px;
+  }
+}
+
+.social__instagram--size {
+  width: 15px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__instagram--size {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.social__facebook--size {
+  width: 8px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__facebook--size {
+    width: 10.27px;
+    height: 19px;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social__list {
+    justify-content: start;
   }
 }
 
@@ -262,12 +315,27 @@ button {
 
 .button__register--padding {
   padding: 12px 46px 12px 45px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.button__register--margin {
+  margin-bottom: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .button__register--margin {
+    margin-bottom: 36px;
+  }
 }
 
 .button__send--padding {
   padding: 12px 56px 12px 56px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .button__register--size {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .section__title {
@@ -325,8 +393,8 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 33px;
   padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .mobile-menu__button {
@@ -344,12 +412,17 @@ button {
 }
 
 .hero__container {
+  position: relative;
   text-align: center;
+  padding-top: 26px;
+  padding-bottom: 12px;
 }
 
 @media screen and (min-width: 768px) {
   .hero__container {
     text-align: start;
+    padding-top: 7px;
+    padding-bottom: 86px;
   }
 }
 
@@ -358,14 +431,41 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 38px;
+  line-height: 1.27;
+}
+
+.hero__title--margin {
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 64px;
+    line-height: 1.02;
+  }
 }
 
 .hero__subhead {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
+}
+
+.hero__subhead--margin {
   margin-bottom: 37px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__subhead {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__subhead {
+    margin-bottom: 26px;
+  }
 }
 
 .hero__title--wrap {
@@ -376,6 +476,26 @@ button {
 @media screen and (min-width: 768px) {
   .hero__title--wrap {
     justify-content: start;
+  }
+}
+
+.hero__img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__img {
+    display: block;
+    position: absolute;
+    top: -19.5%;
+    right: 11%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__img {
+    top: -24.3%;
+    right: -27.7%;
   }
 }
 
@@ -618,7 +738,7 @@ button {
 }
 
 .form__container::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 100%;
   height: 1px;
@@ -678,13 +798,6 @@ button {
 }
 
 /*вынести в батонн*/
-@media screen and (min-width: 767.98px) {
-  .button__register--padding {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}
-
 .contact {
   text-align: center;
   flex-direction: column;
@@ -798,62 +911,8 @@ button {
   top: 25px;
 }
 
-.footer__icon {
-  fill: var --default-text-color;
-  margin-left: 9px;
-}
-
-.footer__twitter--width {
-  width: 19px;
-  height: 15px;
-}
-
-@media screen and (min-width: 1280px) {
-  .footer__twitter--width {
-    width: 24px;
-    height: 19px;
-  }
-}
-
-.footer__instagram--width {
-  width: 15px;
-  height: 15px;
-}
-
-@media screen and (min-width: 1280px) {
-  .footer__instagram--width {
-    width: 19px;
-    height: 19px;
-  }
-}
-
-.footer__facebook--width {
-  width: 8px;
-  height: 15px;
-}
-
-@media screen and (min-width: 1280px) {
-  .footer__facebook--width {
-    width: 10.27px;
-    height: 19px;
-  }
-}
-
-.footer__list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 51px;
-}
-
 .footer__address {
   padding-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__address {
-    padding-left: 67px;
-    padding-right: 67px;
-  }
 }
 
 .footer__address-list {
