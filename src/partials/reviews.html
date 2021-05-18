@@ -1,6 +1,6 @@
 <!-- section rerviews -->
 <section class="reviews">
-  <div class="container">
+  <div class="container reviews__container">
     <h2 class="section__title" id="Reviews">Reviews</h2>
     <ul class="reviews__list">
       <li class="reviews__item">
@@ -49,7 +49,7 @@
               </svg>
             </li>
             <li class="stars__item">
-              <svg class="stars__icon" width="24" height="24">
+              <svg class="stars__icon stars__icon--emp" width="24" height="24">
                 <use href="./images/icons.svg#star-emp"></use>
               </svg>
             </li>
@@ -79,7 +79,11 @@
               type="image/png"
             />
 
-            <img class="reviews__img" src="./images/mobile/photo.png" alt="photo Willa" />
+            <img
+              class="reviews__img"
+              src="./images/mobile/photo.png"
+              alt="photo Willa"
+            />
           </picture>
           <!-- вставка звездочек -->
           <ul class="stars">
@@ -167,20 +171,17 @@
         <h4 class="reviews__item-name">Elisabeth</h4>
       </li>
     </ul>
-    <article class="reviews__text">
-      <span class="reviews__text-block">
-        Last time I have visited a cooking course by Eva 
+    <article>
+      <p class="reviews-text">
+        Last time I have visited a cooking course by Eva
+        <span class="reviews-text__item">
+          I was impressed with the way she explained everything to people. You
+          can be sure you will manage to cook a delicious dish even if it is
+          your first time in the kitchen!
         </span>
-        
-         <span class="reviews__text-block"></span>
-        I was impressed with the way she explained
-        everything to people. You can be sure you will manage to cook a delicious dish even if it is
-        your first time in the kitchen!
-      </span>
-      <span class="reviews__text-block">
-        Thank you so much for the masterclass! Looking forward to the next one and highly recommend
-        it to everyone!
-      </span>
+        Thank you so much for the masterclass! Looking forward to the next one
+        and highly recommend it to everyone!
+      </p>
     </article>
   </div>
 </section>

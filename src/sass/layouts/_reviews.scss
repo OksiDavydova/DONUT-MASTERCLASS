@@ -1,56 +1,63 @@
 //
+@media screen and (min-width: 767.98px) {
+  .reviews__container {
+    max-width: 626px;
+    padding-top: 10px;
+  }
+}
+
 .reviews__list {
   @media screen and (min-width: 600px) {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
   }
 }
 .reviews__item {
-  @media screen and (min-width: 320px) {
-    &:first-child {
-      display: none;
-    }
+  @media screen and (max-width: 767.98px) {
+    &:first-child,
     &:last-child {
       display: none;
     }
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
     &:first-child {
       display: block;
       margin-right: 32px;
+      @media screen and (min-width: 1200px) {
+        margin-right: 60px;
+      }
     }
     &:last-child {
       display: block;
       margin-left: 32px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 60px;
+      }
     }
   }
 }
 .reviews__item-name {
-  margin: 0;
+  margin-bottom: 15px;
   font-style: italic;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 4.64;
   text-align: center;
   color: var(--default-text-color);
 }
-.reviews__text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
+.reviews-text {
   text-align: center;
-  color: var(--default-text-color);
+  padding: 5px;
 
-  @media screen and (min-width: 600px) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 767.98px) {
+    &__item {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1199.98px) {
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
-.reviews__text-block {
-  display: block;
-}
+
 .reviews__img {
   margin-right: auto;
   margin-left: auto;
@@ -62,25 +69,32 @@
     width: 186px;
     height: 186px;
   }
-}
 
-.reviews__img--wight {
-  @media screen and (min-width: 600px) {
-    width: 110px;
-    height: 110px;
+  &--wight {
+    @media screen and (min-width: 600px) {
+      width: 110px;
+      height: 110px;
+    }
   }
 }
+
 // стили для звезд
 .stars {
   display: flex;
   justify-content: center;
   margin-top: 6px;
+  margin-bottom: 6px;
   &__item {
     &:not(:last-child) {
-      padding-right: 4px;
+      margin-right: 4px;
     }
   }
 }
-.star__icon {
-  color: var(--primery-accent-color);
+.stars__icon {
+  fill: var(--primery-accent-color);
+
+  &--emp {
+    fill: var(--bg-color);
+    stroke: var(--primery-accent-color);
+  }
 }
