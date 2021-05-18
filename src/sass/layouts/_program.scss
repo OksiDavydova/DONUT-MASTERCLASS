@@ -1,5 +1,8 @@
-.program__more {
-  display: inline;
+#program__more {
+  display: none;
+  @media screen and (min-width: 1199.98px) {
+    display: block;
+  }
 }
 
 .program--padding {
@@ -36,7 +39,7 @@
   }
 
   &::before {
-    content: '>';
+    content: ">";
     padding-right: 2px;
   }
 }
