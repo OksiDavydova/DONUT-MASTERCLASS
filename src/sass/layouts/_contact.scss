@@ -1,35 +1,38 @@
 .contact {
-  text-align: center;
-  flex-direction: column;
-  padding-top: 70px;
+  padding-top: 25px;
   padding-bottom: 45px;
+  text-align: center;
 
-  &__span {
-    padding-top: 0;
-    line-height: 3.06;
-
-    @media screen and (min-width: 1280px) {
-      font-size: 18px;
-      line-height: 2.61;
-    }
+  @media screen and (min-width: 767.98px) {
+    padding-bottom: 50px;
   }
 
-  &__title {
-    font-family: var(--title-font);
-    font-size: 24px;
-    line-height: 1.71;
+  @media screen and (min-width: 1198.98px) {
+    padding-bottom: 75px;
+  }
 
-    @media screen and (min-width: 1280px) {
-      font-size: 36px;
-      line-height: 1.81;
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 479.98px) {
+      max-width: 440px;
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1199.98px) {
+      max-width: 460px;
     }
   }
 }
 
-.contact__input,
-.contact__comment {
-  font-size: 16px;
-  min-width: 265px;
+.contact__input {
   margin-bottom: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -37,32 +40,18 @@
   border: none;
   border-bottom: 1px solid var(--primery-accent-color);
 
-  @media screen and (min-width: 480px) {
-    min-width: 380px;
+  &--textarea {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    margin-bottom: 0px;
   }
-
-  @media screen and (min-width: 768px) {
-    min-width: 410px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    min-width: 430px;
-    margin-bottom: 15px;
-  }
-}
-.contact__input::placeholder {
-  color: var(--placeholder-color-text);
-}
-
-.contact__comment {
-  resize: none;
-  height: 27px;
-  bottom: 5px;
-  overflow: hidden;
-  padding-bottom: 20px;
 
   &::placeholder {
     color: var(--placeholder-color-text);
-    top: 25px;
+  }
+
+  &:focus {
+    outline-color: var(--primery-accent-color);
   }
 }
