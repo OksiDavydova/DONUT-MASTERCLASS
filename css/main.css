@@ -242,13 +242,20 @@ button {
 .btn__more {
   display: block;
   border: none;
+  padding: 0px;
   background-color: transparent;
   font-family: var(--title-font);
   font-weight: normal;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.2;
   text-align: center;
   color: var(--primery-accent-color);
+}
+
+.btn__more--position {
+  position: absolute;
+  left: 0;
+  top: 103%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -264,12 +271,12 @@ button {
   font-family: var(--title-font);
   font-weight: normal;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 2.7;
   text-align: center;
   color: var(--default-text-color);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .section__title--location {
     display: flex;
     justify-content: start;
@@ -281,6 +288,10 @@ button {
   font-size: 16px;
   line-height: 1.25;
   color: var(--default-text-color);
+}
+
+.section__text--margin {
+  margin-bottom: 20px;
 }
 
 .header__container {
@@ -542,7 +553,7 @@ button {
 }
 
 .more {
-  display: inline;
+  display: block;
 }
 
 @media screen and (max-width: 1199px) {
@@ -553,14 +564,13 @@ button {
 
 .about__img {
   position: absolute;
-  top: -6%;
+  top: -5.5%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) {
   .about__img {
-    position: absolute;
-    top: 0;
-    left: 12px;
+    left: 19.6%;
+    top: -6.2%;
   }
 }
 
@@ -575,10 +585,14 @@ button {
 
 .about__text {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-@media screen and (min-width: 600px) {
+.about__element {
+  padding-top: 265px;
+}
+
+@media screen and (min-width: 768px) {
   .about__element {
     justify-content: flex-end;
     width: calc(100% / 2);
@@ -598,19 +612,16 @@ button {
   display: inline;
 }
 
-@media screen and (max-width: 599.98px) {
-  .program {
-    margin-bottom: 25px;
-  }
+.program--padding {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
-@media screen and (min-width: 600px) {
-  .program {
-    margin-bottom: 0;
-  }
+.program__element {
+  position: relative;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .program__element {
     width: calc(100% / 2);
   }
@@ -636,13 +647,11 @@ button {
   padding-right: 2px;
 }
 
-@media screen and (max-width: 599.98px) {
-  .program-events {
-    margin-top: 50px;
-  }
+.program-events {
+  margin-top: 95px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .program-events {
     margin-top: 30px;
     width: calc(100% / 2);
@@ -661,7 +670,7 @@ button {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 599.98px) {
+@media screen and (max-width: 767.98px) {
   .program-events__list {
     max-width: 290px;
     margin-left: auto;
@@ -669,7 +678,7 @@ button {
   }
 }
 
-@med ia screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .program-events__list {
     justify-content: space-around;
   }
@@ -692,14 +701,14 @@ button {
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 }
 
-@media screen and (max-width: 599.98px) {
+@media screen and (max-width: 767.98px) {
   .program-events__item {
     flex-basis: calc((100% - (3px * 2)) / 2);
     height: 142px;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .program-events__item {
     min-width: 142px;
     height: 142px;
@@ -713,13 +722,13 @@ button {
   }
 }
 
-@media screen and (max-width: 599.98px) {
+@media screen and (max-width: 767.98px) {
   .program-events__item:nth-child(2n + 1) {
     margin-right: 6px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .program-events__item:nth-child(2n + 1) {
     margin-right: 14px;
   }
@@ -731,25 +740,25 @@ button {
   }
 }
 
-@media screen and (max-width: 599.98px) {
+@media screen and (max-width: 767.98px) {
   .program-events__item:nth-child(n + 2) {
     margin-top: 30px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .program-events__item:nth-child(n + 2) {
     margin-top: 33px;
   }
 }
 
-@media screen and (max-width: 599.98px) {
+@media screen and (max-width: 767.98px) {
   .program-events__item:last-child {
     margin-top: 50px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .program-events__item:last-child {
     margin-top: 63px;
   }
@@ -788,6 +797,10 @@ button {
 
 .program__icon {
   margin-bottom: 8px;
+}
+
+.program__list--margin {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 600px) {

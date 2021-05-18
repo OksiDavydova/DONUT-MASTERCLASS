@@ -10,7 +10,7 @@
 }
 
 .more {
-  display: inline;
+  display: block;
   @media screen and (max-width: 1199px) {
     display: none;
   }
@@ -20,12 +20,11 @@
 // требует еще корректировки
 .about__img {
   position: absolute;
-  top: -6%;
+  top: -5.5%;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    position: absolute;
-    top: 0;
-    left: 12px;
+  @media screen and (min-width: 480px) {
+    left: 19.6%;
+    top: -6.2%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -38,11 +37,14 @@
 
 .about__text {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  // margin-bottom: 25px;
 }
 
 .about__element {
-  @media screen and (min-width: 600px) {
+  padding-top: 265px;
+
+  @media screen and (min-width: 768px) {
     justify-content: flex-end;
     width: calc(100% / 2);
   }
