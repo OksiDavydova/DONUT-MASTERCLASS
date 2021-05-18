@@ -1,7 +1,14 @@
 // section about
 
+.about--padding {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+  }
+}
+
 .container--flex {
   position: relative;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
@@ -26,6 +33,11 @@
     top: -6.2%;
   }
 
+  @media screen and (min-width: 768px) {
+    left: -6.5%;
+    top: 3%;
+  }
+
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 0;
@@ -47,6 +59,8 @@
   padding-top: 265px;
 
   @media screen and (min-width: 768px) {
+    padding-top: 0;
+
     justify-content: flex-end;
     width: calc(100% / 2);
   }
