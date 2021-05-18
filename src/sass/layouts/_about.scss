@@ -1,15 +1,12 @@
 // section about
 
-
 .container--flex {
   position: relative;
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-end;
   }
 }
-
-
 
 .more {
   display: block;
@@ -40,7 +37,10 @@
 .about__text {
   display: block;
   margin-bottom: 20px;
-  // margin-bottom: 25px;
+
+  &--margin {
+    margin-bottom: 20px;
+  }
 }
 
 .about__element {
