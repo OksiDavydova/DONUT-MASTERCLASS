@@ -15,14 +15,10 @@
   }
 }
 
-.more {
-  display: block;
-  @media screen and (max-width: 1199.98px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 1200px) {
-    display: inline;
+#more {
+  display: none;
+  @media screen and (min-width: 1199.98px) {
+    display: block;
   }
 }
 
