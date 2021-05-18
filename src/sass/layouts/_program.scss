@@ -2,10 +2,13 @@
   display: inline;
 }
 
-
 .program--padding {
   padding-top: 20px;
   padding-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 51px;
+  }
 }
 
 .program__element {
