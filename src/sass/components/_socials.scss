@@ -1,5 +1,10 @@
 .social__icon {
   fill: var (--default-text-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--primery-accent-color);
+  }
 }
 
 .social__item:not(:first-child) {
@@ -42,5 +47,10 @@
 
   @media screen and (min-width: 768px) {
     justify-content: start;
+  }
+
+  &--center {
+    justify-content: center;
+    padding-bottom: 34px;
   }
 }
