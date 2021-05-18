@@ -26,29 +26,6 @@
   }
 }
 
-.contact__container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media screen and (max-width: 479.99px) {
-    width: 280px;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767.99px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1279.99px) {
-    width: 626px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 822px;
-  }
-}
-
 .contact__input,
 .contact__comment {
   font-size: 16px;
