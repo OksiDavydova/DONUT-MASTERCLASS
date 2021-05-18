@@ -1,18 +1,11 @@
 .hero__container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   position: relative;
-
   text-align: center;
-
   padding-top: 26px;
   padding-bottom: 12px;
 
   @media screen and (min-width: 768px) {
     text-align: start;
-
     padding-top: 7px;
     padding-bottom: 86px;
   }
@@ -20,7 +13,6 @@
 
 .hero__title {
   font-family: var(--title-font);
-  font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 1.27;
@@ -37,9 +29,6 @@
 
 .hero__subhead {
   font-weight: 500;
-  // text-align: center;
-  font-size: 16px;
-  line-height: 1.25;
 
   &--margin {
     margin-bottom: 37px;
