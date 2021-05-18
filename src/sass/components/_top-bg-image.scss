@@ -1,6 +1,6 @@
 .top-bg-images {
-  position: relative;
-  overflow: auto;
+  // position: relative;
+  // overflow: auto;
 
   background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
 
@@ -8,12 +8,17 @@
   background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/bg-donut-king.png);
-    background-size: 100%;
+    background-image: url(../images/tablet/donut-king.png), url(../images/tablet/bg-donut-king.png);
+
+    background-position: top right 36%, top;
+    background-size: 378px, 100%;
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/desktop/bg-donut-king.png);
-    background-size: 100%;
+    background-image: url(../images/desktop/spoon.png), url(../images/desktop/donut-king.png),
+      url(../images/desktop/bg-donut-king.png);
+
+    background-position: top 17% left, top right, top;
+    background-size: 138px, 723px, 100%;
   }
 }
