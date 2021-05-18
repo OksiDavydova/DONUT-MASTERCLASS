@@ -7,7 +7,6 @@
   background-color: var(--placeholder-color-text);
   opacity: 1;
   transition: opacity 500ms ease-out 200ms;
-  z-index: 900;
 
   padding: 75px 15px;
   overflow-y: scroll;
@@ -29,6 +28,7 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  max-width: 450px;
   width: 100%;
   padding: 5px;
 
@@ -36,6 +36,7 @@
   background-color: var(--placeholder-color-text);
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   transition: transform 600ms ease-out 100ms;
+
   max-width: 400px;
   min-height: 350px;
 
