@@ -8,6 +8,11 @@
   line-height: 2.7;
   text-align: center;
   color: var(--default-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
 }
 
 .section__title--location {
@@ -22,6 +27,11 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--default-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 
   &--margin {
     margin-bottom: 20px;
