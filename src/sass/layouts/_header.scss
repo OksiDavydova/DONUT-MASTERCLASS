@@ -65,21 +65,29 @@
   position: fixed;
   top: 0;
   left: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 7px;
-  padding-bottom: 7px;
+
+  // padding-top: 7px;
+  // padding-bottom: 7px;
+
   width: 100vw;
   height: 100vh;
+
   padding: 25px 20px;
+
   overflow-y: scroll;
+
   background-color: rgba(254, 243, 228, 0.9);
   background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
   background-size: 100px, 100%;
   background-repeat: no-repeat;
   transform: translateX(100%);
   transition: transform var(--animation);
+
+  z-index: 100;
 
   &.is-open {
     transform: translateX(0);
