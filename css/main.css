@@ -37,6 +37,7 @@ body.modal-open {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -529,14 +530,14 @@ button {
   .hero__img {
     display: block;
     position: absolute;
-    top: -19.5%;
+    top: -34.1%;
     right: 11%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__img {
-    top: -24.3%;
+    top: -36.5%;
     right: -27.7%;
   }
 }
@@ -585,6 +586,10 @@ button {
 
 .about__text {
   display: block;
+  margin-bottom: 20px;
+}
+
+.about__text--margin {
   margin-bottom: 20px;
 }
 
@@ -803,62 +808,80 @@ button {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 767.98px) {
+  .reviews__container {
+    max-width: 656px;
+    padding-top: 10px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .reviews__list {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 320px) {
-  .reviews__item:first-child {
-    display: none;
-  }
-  .reviews__item:last-child {
+@media screen and (max-width: 767.98px) {
+  .reviews__item:first-child, .reviews__item:last-child {
     display: none;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .reviews__item:first-child {
     display: block;
     margin-right: 32px;
   }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .reviews__item:first-child {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .reviews__item:last-child {
     display: block;
     margin-left: 32px;
   }
 }
 
-.reviews__item-name {
-  margin: 0;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 4.64;
-  text-align: center;
-  color: var(--default-text-color);
-}
-
-.reviews__text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  color: var(--default-text-color);
-}
-
-@media screen and (min-width: 600px) {
-  .reviews__text {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .reviews__item:last-child {
+    margin-left: 60px;
   }
 }
 
-.reviews__text-block {
-  display: block;
+.reviews__item-name {
+  margin-bottom: 15px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reviews-text {
+  text-align: center;
+}
+
+@media screen and (min-width: 479.98px) {
+  .reviews-text__item {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 479.98px) and (min-width: 767.98px) {
+  .reviews-text__item--new-line {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .reviews-text {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .reviews__img {
@@ -891,14 +914,45 @@ button {
   display: flex;
   justify-content: center;
   margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .stars__item:not(:last-child) {
-  padding-right: 4px;
+  margin-right: 4px;
 }
 
-.star__icon {
+.stars__icon {
+  fill: var(--primery-accent-color);
+}
+
+.stars__icon--emp {
+  fill: var(--bg-color);
+  stroke: var(--primery-accent-color);
+}
+
+.reviews__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
   color: var(--primery-accent-color);
+}
+
+.reviews__number::before, .reviews__number::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.reviews__number::before {
+  margin-right: 12px;
+}
+
+.reviews__number::after {
+  margin-left: 12px;
 }
 
 .registration {
