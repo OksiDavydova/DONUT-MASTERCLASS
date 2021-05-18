@@ -15,22 +15,7 @@
       crossorigin="anonymous"
     />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-      $(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() != 0) {
-            $('#toTop').fadeIn();
-          } else {
-            $('#toTop').fadeOut();
-          }
-        });
-
-        $('#toTop').click(function () {
-          $('body,html').animate({ scrollTop: 0 }, 800);
-        });
-      });
-    </script>
+    <script src="./js/to-up.js"></script>
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
@@ -50,6 +35,8 @@
       <include src="./partials/footer.html"></include>
       <include src="./partials/modal-map.html"></include>
     </div>
+    <include src="./partials/to-top.html"></include>
+
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/read-more-less.js"></script>
     <script src="./js/program_btn-read-more.js"></script>
@@ -59,10 +46,5 @@
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
     <script src="./index.js"></script>
-    <div id="toTop">
-      <svg class="btn-up__icon">
-        <use href="./images/icons.svg#btn-up"></use>
-      </svg>
-    </div>
   </body>
 </html>
