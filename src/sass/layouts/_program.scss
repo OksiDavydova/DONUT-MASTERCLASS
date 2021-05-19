@@ -9,21 +9,17 @@
   padding-top: 20px;
   padding-bottom: 40px;
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0px;
+  }
+
   @media screen and (min-width: 1200px) {
-    padding-bottom: 51px;
+    padding-bottom: 45px;
   }
 }
 
 .program__element {
   position: relative;
-  @media screen and (min-width: 768px) {
-    width: calc(100% / 2);
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 40px) / 2);
-    margin-right: 20px;
-  }
 }
 
 .program__text {
@@ -32,48 +28,77 @@
   }
 }
 
-// не забыть поставить pading-botton при кпопки less
 .program__item {
   &:not(:last-child) {
     margin-bottom: 10px;
   }
 
   &::before {
-    content: ">";
+    content: '>';
     padding-right: 2px;
   }
 }
 
-// позиционирование и стили элементов
-.program-events {
-  margin-top: 95px;
+.program__flex {
   @media screen and (min-width: 768px) {
-    margin-top: 30px;
-    width: calc(100% / 2);
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -35px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 40px) / 2);
-    margin-left: 20px;
+    margin-left: -40px;
+  }
+}
+
+.program__flex-item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 70px) / 2);
+    margin-left: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 80px) / 2);
+    margin-left: 40px;
+  }
+}
+
+.program-events {
+  margin-top: 95px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
   }
 }
 
 .program-events__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
-  @media screen and (max-width: 767.98px) {
+  margin-left: -6px;
+
+  @media screen and (max-width: 479.98px) {
     max-width: 290px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  @media screen and (min-width: 480px) {
+    margin-left: -20px;
+  }
+
   @media screen and (min-width: 768px) {
-    justify-content: space-around;
+    margin-left: -15px;
   }
 
   @media screen and (min-width: 1200px) {
-    justify-content: space-around;
+    margin-left: -32px;
   }
 }
 
@@ -87,41 +112,57 @@
   background: var(--bg-color-element);
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
-  @media screen and (max-width: 767.98px) {
-    flex-basis: calc((100% - (3px * 2)) / 2);
+  @media screen and (max-width: 479.98px) {
+    flex-basis: calc((100% - 12px) / 2);
+    margin-left: 6px;
     height: 142px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    min-width: 142px;
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 40px) / 2);
+    margin-left: 20px;
+    max-width: 142px;
     height: 142px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-left: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 165px;
-    height: 165px;
-  }
+    flex-basis: calc((100% - 64px) / 2);
+    margin-left: 32px;
 
-  &:nth-child(2n + 1) {
-    @media screen and (max-width: 767.98px) {
-      margin-right: 6px;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-right: 14px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 0;
-    }
+    max-width: 180px;
+    height: 180px;
   }
 
   &:nth-child(n + 2) {
     @media screen and (max-width: 767.98px) {
       margin-top: 30px;
     }
+
     @media screen and (min-width: 768px) {
       margin-top: 33px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 55px;
+    }
+  }
+
+  &:nth-child(n + 3) {
+    @media screen and (max-width: 767.98px) {
+      margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 33px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 25px;
     }
   }
 
@@ -132,6 +173,10 @@
 
     @media screen and (min-width: 768px) {
       margin-top: 63px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 73px;
     }
   }
 }
@@ -144,6 +189,10 @@
 
   color: var(--black-color);
   margin-bottom: 13px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
 }
 
 .program-events__text {
@@ -153,24 +202,45 @@
 
   color: var(--black-color);
   margin-bottom: 13px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
 
 .program-events__img {
   position: absolute;
   top: -34px;
-  left: 32px;
+  left: 35px;
 
-  &--position {
+  &--zebra {
+    left: 31px;
+  }
+
+  &--chocolate {
     top: -27px;
   }
 
-  &--poz {
+  &--sprinkled {
     top: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -42px;
+    left: 46px;
+
+    &--zebra {
+      left: 40px;
+    }
   }
 }
 
 .program__icon {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12px;
+  }
 }
 
 .program__list--margin {

@@ -2,9 +2,11 @@
   // position: relative;
   // overflow: auto;
 
-  background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
+  background-image: url(../images/mobile/donut-menu.png), url(../images/mobile/donut-king.png),
+    url(../images/mobile/bg-donut-king.png);
 
-  background-size: 124px, 100%;
+  background-size: 280px, 124px, 100%;
+  background-position: top 308px center, top left, top;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
