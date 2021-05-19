@@ -20,8 +20,6 @@
 
   &__register--padding {
     padding: 12px 46px 12px 45px;
-    // margin-left: auto;
-    // margin-right: auto;
   }
 
   &__register--margin {
@@ -63,7 +61,7 @@
   &--position {
     position: absolute;
     left: 0;
-    top: 103%;
+    top: 106%;
 
     @media screen and (min-width: 768px) {
       position: initial;
