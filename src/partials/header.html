@@ -6,10 +6,11 @@
       </svg>
     </a>
     <button
-      class="mobile-menu__btn mobile-menu__btn--position js-open-menu"
+      class="mobile-menu__btn mobile-menu__btn--position"
       type="button"
       aria-expanded="false"
       aria-controls="menu-container"
+      menu-button
     >
       <svg
         class="mobile-menu__icon"
@@ -17,7 +18,8 @@
         width="30px"
         height="16px"
       >
-        <use class="icon-menu" href="./images/icons.svg#menu"></use>
+        <use class="icon_open" href="./images/icons.svg#menu"></use>
+        <use class="icon_close" href="./images/icons.svg#close"></use>
       </svg>
     </button>
     <nav class="navigation">
@@ -39,12 +41,12 @@
   </div>
 </header>
 
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-btn__close js-close-menu">
-    <svg class="mobile-menu__icon" height="18px" width="18px">
-      <use href="./images/icons.svg#close"></use>
-    </svg>
-  </button>
+<div
+  class="menu-container"
+  id="mobile-menu"
+  aria-expanded="false"
+  data-menu-toggle
+>
   <div>
     <a href="./index.html">
       <svg class="mobile-menu__logo" width="190px" height="85px">
@@ -54,16 +56,40 @@
     <nav>
       <ul class="menu-toggle__list">
         <li class="menu-toggle__item">
-          <a class="menu-toggle__link" href="#Program">Program</a>
+          <a
+            class="menu-toggle__link"
+            href="#Program"
+            data-menu-item
+            aria-expanded="false"
+            >Program</a
+          >
         </li>
         <li class="menu-toggle__item">
-          <a class="menu-toggle__link" href="#Reviews">Reviews</a>
+          <a
+            class="menu-toggle__link"
+            href="#Reviews"
+            data-menu-item
+            aria-expanded="false"
+            >Reviews</a
+          >
         </li>
         <li class="menu-toggle__item">
-          <a class="menu-toggle__link" href="#About">About us</a>
+          <a
+            class="menu-toggle__link"
+            href="#About"
+            aria-expanded="false"
+            data-menu-item
+            >About us</a
+          >
         </li>
         <li class="menu-toggle__item">
-          <a class="menu-toggle__link" href="#Contacts">Contacts</a>
+          <a
+            class="menu-toggle__link"
+            href="#Contacts"
+            aria-expanded="false"
+            data-menu-item
+            >Contacts</a
+          >
         </li>
       </ul>
     </nav>
