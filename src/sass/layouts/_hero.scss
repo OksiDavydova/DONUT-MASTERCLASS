@@ -1,11 +1,8 @@
-.hero__container {
-  position: relative;
-  text-align: center;
+.hero {
   padding-top: 26px;
   padding-bottom: 12px;
 
   @media screen and (min-width: 768px) {
-    text-align: start;
     padding-top: 7px;
     padding-bottom: 70px;
   }
@@ -13,6 +10,15 @@
   @media screen and (min-width: 1200px) {
     padding-top: 50px;
     padding-bottom: 70px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
   }
 }
 

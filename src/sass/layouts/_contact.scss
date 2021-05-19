@@ -21,6 +21,7 @@
     margin-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
+
     @media screen and (min-width: 479.98px) {
       max-width: 440px;
       margin-bottom: 25px;
@@ -39,6 +40,8 @@
 
   border: none;
   border-bottom: 1px solid var(--primery-accent-color);
+
+  background: transparent;
 
   &--textarea {
     width: 100%;
