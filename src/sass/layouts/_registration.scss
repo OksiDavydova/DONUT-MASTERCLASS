@@ -99,7 +99,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 100%;
       height: 1px;
@@ -144,18 +144,34 @@
     line-height: inherit;
     border: none;
     padding: 0;
-    border-bottom: 1px solid #ab816c;
+    border-bottom: 1px solid var(--primery-accent-color);
     margin-bottom: 25px;
-    outline: none;
 
     &:last-child {
       margin-bottom: 0;
+    }
+    &:focus {
+      outline: 1px solid var(--primery-accent-color);
+      border-bottom-color: var(--secondary-accent-col);
     }
 
     &::placeholder {
       color: var(--placeholder-color-text);
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: var(--default-text-color);
+      box-shadow: 0 0 0px 1000px rgba(254, 243, 228, 0.9) inset;
+    }
+
+    &:valid:not(:focus) {
+      color: var(--default-text-color);
+    }
+
+    &:invalid:not(:focus) {
+      color: red;
+    }
   }
 }
-
-/*вынести в батонн*/
