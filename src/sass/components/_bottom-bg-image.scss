@@ -11,9 +11,9 @@
       url(../images/tablet/confetti.png), url(../images/tablet/flour.png),
       url(../images/tablet/bg-reviews.png);
 
-    background-position: bottom 51% left, bottom 36% right, bottom right, top;
+    background-position: bottom 48% left, bottom 33% right, bottom right, top;
 
-    background-size: 240px, 314px, 167px, 100%;
+    background-size: 270px, 260px, 147px, 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -21,8 +21,8 @@
       url(../images/desktop/confetti.png), url(../images/desktop/flour.png),
       url(../images/desktop/bg-reviews.png);
 
-    background-position: bottom 50% left 5%, bottom 30% right 3%, bottom right, top;
+    background-position: bottom 50% left 7%, bottom 24% right 1%, bottom right, top;
 
-    background-size: 270px, 574px, 335px, 100%;
+    background-size: 270px, 604px, 320px, 100%;
   }
 }
