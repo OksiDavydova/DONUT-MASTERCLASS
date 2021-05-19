@@ -1,15 +1,24 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+// (() => {
+//   const mobileMenu = document.querySelector('.js-menu-container');
+//   const openMenuBtn = document.querySelector('.js-open-menu');
+//   const closeMenuBtn = document.querySelector('.js-close-menu');
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+//   const toggleMenu = () => {
+//     const isMenuOpen =
+//       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+//     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+//     document.body.classList.toggle("modal-open");
+//     mobileMenu.classList.toggle('is-open');
+//   };
 
-  function toggleModal() {
-    document.body.classList.toggle("modal-open");
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+//   openMenuBtn.addEventListener('click', toggleMenu);
+//   closeMenuBtn.addEventListener('click', toggleMenu);
+
+//   // Закрываем мобильное меню на более широких экранах
+//   // в случае изменения ориентации устройства.
+//   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+//     if (!e.matches) return;
+//     mobileMenu.classList.remove('is-open');
+//     openMenuBtn.setAttribute('aria-expanded', false);
+//   });
+// })();
