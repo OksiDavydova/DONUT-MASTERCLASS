@@ -1,8 +1,6 @@
 .header__container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
   padding-top: 7px;
   padding-bottom: 7px;
 
@@ -44,9 +42,7 @@
   }
 
   &__link {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.22;
+    @include fonts(18px, normal, 1.22);
     border-bottom-color: none;
     padding: 5px 0;
     color: var(--default-text-color);
@@ -98,8 +94,6 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  border: none;
-  background-color: transparent;
   z-index: 103;
   transition: color var(--animation);
 
