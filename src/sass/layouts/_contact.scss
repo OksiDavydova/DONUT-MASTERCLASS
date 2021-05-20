@@ -63,6 +63,21 @@
   }
 
   &:focus {
-    outline-color: var(--primery-accent-color);
+    outline: 1px solid var(--primery-accent-color);
+    border-bottom-color: var(--secondary-accent-col);
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--default-text-color);
+    box-shadow: 0 0 0px 1000px rgba(254, 243, 228, 0.966) inset;
+  }
+
+  &:valid:not(:focus) {
+    color: var(--default-text-color);
+  }
+
+  &:invalid:not(:focus) {
+    color: red;
   }
 }
