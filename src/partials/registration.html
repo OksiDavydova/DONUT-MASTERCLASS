@@ -37,11 +37,10 @@
             class="form__input"
             type="tel"
             id="tel"
-            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-            minlength="8"
-            maxlength="12"
+            name="phone"
+            pattern="^\d{3}-\d{3}-\d{4}$"
             placeholder="Phone number"
-            title="Phone Number in the format of: 123-456-7890"
+            title="Your phone number in the format 123-456-7890"
             required
           />
 
@@ -49,6 +48,7 @@
             class="form__input"
             type="email"
             id="email"
+            name="email"
             placeholder="Email"
             title="example@mail.com"
             required
