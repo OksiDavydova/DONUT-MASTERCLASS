@@ -105,15 +105,13 @@
 }
 
 .reviews__number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
   margin-top: 25px;
   color: var(--primery-accent-color);
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: flex;
     align-items: center;
     width: 35px;
