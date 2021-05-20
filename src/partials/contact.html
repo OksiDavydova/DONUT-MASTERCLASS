@@ -4,7 +4,7 @@
     <h3 class="form__subhead form__subhead--center">
       We will answer any question!
     </h3>
-    <form class="contact__form" autocomplete="on" novalidate>
+    <form class="contact__form" autocomplete="on">
       <div class="contact__form-container">
         <input
           class="contact__input"
@@ -12,6 +12,7 @@
           type="email"
           name="email"
           placeholder="E-mail"
+          title="example@mail.com"
           required
         />
 
@@ -20,7 +21,6 @@
             class="contact__input contact__input--textarea"
             name="user_message"
             placeholder="Type your question"
-            pattern="^[A-Za-zА-Яа-яЁё\s]+$"
             rows="1"
             required
           ></textarea>

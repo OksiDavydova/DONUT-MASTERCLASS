@@ -1,17 +1,13 @@
 .footer-address {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
   margin-top: 15px;
   @media screen and (min-width: 767.98px) {
     margin-top: 30px;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px;
-    cursor: pointer;
-  }
-
-  &__link {
+  &__elem {
     display: block;
     padding: 10px 0px;
     color: inherit;

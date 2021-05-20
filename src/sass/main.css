@@ -1415,6 +1415,7 @@ button {
   padding: 0;
   border-bottom: 1px solid var(--primery-accent-color);
   margin-bottom: 25px;
+  background-color: transparent;
 }
 
 .form__input:last-child {
@@ -1492,7 +1493,7 @@ button {
   padding-bottom: 5px;
   border: none;
   border-bottom: 1px solid var(--primery-accent-color);
-  background: transparent;
+  background-color: transparent;
 }
 
 .contact__input--textarea {

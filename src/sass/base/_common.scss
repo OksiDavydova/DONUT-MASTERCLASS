@@ -32,10 +32,12 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
   margin: 0;
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }

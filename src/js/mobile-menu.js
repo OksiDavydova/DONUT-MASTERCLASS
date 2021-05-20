@@ -1,6 +1,6 @@
 (() => {
-  const menuBtnRef = document.querySelector("[menu-button]")
-  const mobileMenuRef = document.querySelector("[data-menu-toggle]")
+  const menuBtnRef = document.querySelector("[mobile-menu-button]")
+  const mobileMenuRef = document.querySelector("[menu-toggle]")
   menuBtnRef.addEventListener("click", () => {
     const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false
     menuBtnRef.classList.toggle("is-open")
@@ -10,9 +10,9 @@
 })();
 
 (() => {
-  const menuItmRef = document.querySelectorAll('[data-menu-item]');
-  const mobileMenuRef = document.querySelector('[data-menu-toggle]');
-  const menuBtnRef = document.querySelector('[menu-button]');
+  const menuItmRef = document.querySelectorAll('[menu-toggle-item]');
+  const mobileMenuRef = document.querySelector('[menu-toggle]');
+  const menuBtnRef = document.querySelector('[mobile-menu-button]');
 
   function closeMenu() {
     mobileMenuRef.classList.remove('is-open');

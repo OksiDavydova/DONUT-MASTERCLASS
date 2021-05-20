@@ -32,7 +32,7 @@
   }
 
   &::before {
-    content: '>';
+    content: ">";
     padding-right: 2px;
   }
 }
@@ -41,7 +41,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-
     margin-left: -35px;
   }
 
@@ -78,7 +77,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   margin-left: -6px;
 
   @media screen and (max-width: 479.98px) {
