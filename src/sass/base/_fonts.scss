@@ -1,0 +1,24 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('.././fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('.././fonts/montserrat-regular-webfont.woff') format('woff');
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('.././fonts/montserrat-medium-webfont.woff2') format('woff2'),
+    url('.././fonts/montserrat-medium-webfont.woff') format('woff');
+}
+/* caveat-brush-regular - latin */
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('.././fonts/caveatbrush-regular-webfont.woff2') format('woff2'),
+    url('.././fonts/caveatbrush-regular-webfont.woff') format('woff');
+}
