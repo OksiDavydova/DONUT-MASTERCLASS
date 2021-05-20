@@ -6,6 +6,13 @@
   background-size: 88px, 100%;
   background-repeat: no-repeat;
 
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/flour2x.png), url(../images/mobile/bg-reviews2x.png);
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/donut-registration.png),
       url(../images/tablet/confetti.png), url(../images/tablet/flour.png),
@@ -14,6 +21,15 @@
     background-position: bottom 48% left, bottom 33% right, bottom right, top;
 
     background-size: 270px, 260px, 147px, 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/donut-registration2x.png),
+        url(../images/tablet/confetti2x.png), url(../images/tablet/flour2x.png),
+        url(../images/tablet/bg-reviews2x.png);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -24,5 +40,14 @@
     background-position: bottom 50% left 7%, bottom 24% right 1%, bottom right, top;
 
     background-size: 270px, 604px, 320px, 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/donut-registration2x.png),
+        url(../images/desktop/confetti2x.png), url(../images/desktop/flour2x.png),
+        url(../images/desktop/bg-reviews2x.png);
+    }
   }
 }
