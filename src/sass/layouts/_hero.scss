@@ -24,9 +24,7 @@
 
 .hero__title {
   font-family: var(--title-font);
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 1.27;
+  @include fonts(30px, normal, 1.27);
 
   &--margin {
     margin-bottom: 3px;

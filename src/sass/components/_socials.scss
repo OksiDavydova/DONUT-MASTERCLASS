@@ -14,9 +14,7 @@
     max-height: 19px;
   }
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     color: var(--default-text-color);
     transition: color var(--animation);
     &:hover,

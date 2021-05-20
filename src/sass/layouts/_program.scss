@@ -11,7 +11,7 @@
     padding-bottom: 40px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199.98px) {
     padding-bottom: 45px;
   }
 }
@@ -38,24 +38,24 @@
 }
 
 .program__flex {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.98px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -35px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199.98px) {
     margin-left: -40px;
   }
 }
 
 .program__flex-item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.98px) {
     flex-basis: calc((100% - 70px) / 2);
     margin-left: 35px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199.98px) {
     flex-basis: calc((100% - 80px) / 2);
     margin-left: 40px;
   }
@@ -64,11 +64,11 @@
 .program-events {
   margin-top: 95px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.98px) {
     margin-top: 35px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199.98px) {
     margin-top: 40px;
   }
 }
@@ -129,7 +129,6 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 64px) / 2);
     margin-left: 32px;
-
     max-width: 180px;
     height: 180px;
   }
@@ -179,10 +178,7 @@
 
 .program-events__desc {
   font-family: var(--title-font);
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.28;
-
+  @include fonts(18px, normal, 1.28);
   color: var(--black-color);
   margin-bottom: 13px;
 
@@ -192,10 +188,7 @@
 }
 
 .program-events__text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.21;
-
+  @include fonts(14px, normal, 1.21);
   color: var(--black-color);
   margin-bottom: 13px;
 
