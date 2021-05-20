@@ -30,10 +30,6 @@ body {
   background-color: var(--bg-color);
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -57,12 +53,14 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
   margin: 0;
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 .container {
@@ -326,7 +324,6 @@ button {
 @media screen and (min-width: 1200px) {
   .section__title {
     font-size: 36px;
-    line-height: 1.8;
   }
 }
 
@@ -531,12 +528,13 @@ button {
 }
 
 .navigation__link {
-  color: var(--default-text-color);
   font-weight: normal;
   font-size: 18px;
   line-height: 1.22;
   border-bottom-color: none;
   padding: 5px 0;
+  color: var(--default-text-color);
+  transition: color var(--animation), border-bottom-color var(--animation);
 }
 
 .navigation__link:hover, .navigation__link:focus {
@@ -558,8 +556,8 @@ button {
   padding: 25px 20px;
   overflow-y: scroll;
   background-color: rgba(254, 243, 228, 0.9);
-  background-image: url(../images/mobile/donut-king.png), url(../images/mobile/bg-donut-king.png);
-  background-size: 100px, 100%;
+  background-image: url(../images/mobile/donut-king.png);
+  background-size: 100px;
   background-repeat: no-repeat;
   transform: translateX(100%);
   transition: transform var(--animation);
@@ -576,6 +574,8 @@ button {
   right: 15px;
   border: none;
   background-color: transparent;
+  z-index: 103;
+  transition: color var(--animation);
 }
 
 .mobile-menu__btn:hover, .mobile-menu__btn:focus {
@@ -592,21 +592,20 @@ button {
   fill: currentColor;
 }
 
-.menu-btn__close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border: none;
-  background-color: transparent;
+.icon_close {
+  display: none;
 }
 
-.menu-btn__close--position {
-  top: 15px;
-  right: 10px;
+.mobile-menu__btn.is-open .icon_close {
+  display: block;
 }
 
-.menu-btn__close:hover, .menu-btn__close:focus {
-  color: var(--secondary-accent-col);
+.icon_open {
+  display: block;
+}
+
+.mobile-menu__btn.is-open .icon_open {
+  display: none;
 }
 
 .mobile-menu__logo {
@@ -630,6 +629,7 @@ button {
 
 .menu-toggle__link {
   color: var(--default-text-color);
+  transition: color var(--animation);
 }
 
 .menu-toggle__link:hover, .menu-toggle__link:focus {
@@ -833,14 +833,10 @@ button {
   }
 }
 
-.program--padding {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .program--padding {
-    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 }
 
@@ -863,7 +859,7 @@ button {
 }
 
 .program__item::before {
-  content: '>';
+  content: ">";
   padding-right: 2px;
 }
 
@@ -1261,7 +1257,7 @@ button {
 }
 
 .registration {
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
@@ -1278,7 +1274,7 @@ button {
   border-top-right-radius: 150px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -1330,15 +1326,17 @@ button {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 767.98px) {
-  .registration__title {
-    display: none;
+@media screen and (max-width: 767px) {
+  .registration__title--position {
+    position: relative;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-
-@media screen and (min-width: 767.98px) {
-  .registration__title--hidden {
-    display: none;
+  .registration__title {
+    position: absolute;
+    top: 10px;
+    left: 24%;
   }
 }
 
@@ -1419,20 +1417,37 @@ button {
   line-height: inherit;
   border: none;
   padding: 0;
-  border-bottom: 1px solid #ab816c;
+  border-bottom: 1px solid var(--primery-accent-color);
   margin-bottom: 25px;
-  outline: none;
+  background-color: transparent;
 }
 
 .form__input:last-child {
   margin-bottom: 0;
 }
 
+.form__input:focus {
+  outline: 1px solid var(--primery-accent-color);
+  border-bottom-color: var(--secondary-accent-col);
+}
+
 .form__input::placeholder {
   color: var(--placeholder-color-text);
 }
 
-/*вынести в батонн*/
+.form__input:-webkit-autofill, .form__input:-webkit-autofill:hover, .form__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--default-text-color);
+  box-shadow: 0 0 0px 1000px rgba(254, 243, 228, 0.9) inset;
+}
+
+.form__input:valid:not(:focus) {
+  color: var(--default-text-color);
+}
+
+.form__input:invalid:not(:focus) {
+  color: red;
+}
+
 .contact {
   padding-top: 25px;
   padding-bottom: 45px;
@@ -1466,7 +1481,6 @@ button {
 @media screen and (min-width: 479.98px) {
   .contact__form-container {
     max-width: 440px;
-    margin-bottom: 25px;
   }
 }
 
@@ -1482,7 +1496,7 @@ button {
   padding-bottom: 5px;
   border: none;
   border-bottom: 1px solid var(--primery-accent-color);
-  background: transparent;
+  background-color: transparent;
 }
 
 .contact__input--textarea {
@@ -1511,6 +1525,9 @@ button {
 }
 
 .footer-address {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
   margin-top: 15px;
 }
 
@@ -1520,14 +1537,7 @@ button {
   }
 }
 
-.footer-address__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0px 10px 0px;
-  cursor: pointer;
-}
-
-.footer-address__link {
+.footer-address__elem {
   display: block;
   padding: 10px 0px;
   color: inherit;
@@ -1535,7 +1545,7 @@ button {
   transition: color var(--animation), outline-color var(--animation);
 }
 
-.footer-address__link:hover, .footer-address__link:focus {
+.footer-address__elem:hover, .footer-address__elem:focus {
   color: var(--primery-accent-color);
   outline-color: var(--secondary-accent-col);
 }
