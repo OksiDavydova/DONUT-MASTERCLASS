@@ -2,26 +2,25 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
-// Стили для файла с примером HTML-фрагмента
-@import './utils/variables';
+@import "./utils/variables";
+@import "./utils/mixin";
 @import './base/fonts';
-@import './base/common';
-@import './base/container';
+@import "./base/common";
+@import "./base/container";
 
-@import './components/top-bg-image';
-@import './components/bottom-bg-image';
-@import './components/socials';
-@import './components/button';
-@import './components/section-title';
-@import './components/modal-map';
-@import './components/button-up';
+@import "./components/top-bg-image";
+@import "./components/bottom-bg-image";
+@import "./components/socials";
+@import "./components/button";
+@import "./components/section-title";
+@import "./components/modal-map";
+@import "./components/button-up";
 
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/about';
-@import './layouts/program';
-@import './layouts/reviews';
-@import './layouts/registration';
-@import './layouts/contact';
-@import './layouts/footer';
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/program";
+@import "./layouts/reviews";
+@import "./layouts/registration";
+@import "./layouts/contact";
+@import "./layouts/footer";
