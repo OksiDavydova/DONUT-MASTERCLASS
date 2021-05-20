@@ -85,6 +85,13 @@
   &.is-open {
     transform: translateX(0);
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/donut-king2x.png);
+  }
 }
 
 .mobile-menu__btn {
