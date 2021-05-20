@@ -9,7 +9,7 @@
       class="mobile-menu__btn mobile-menu__btn--position"
       type="button"
       aria-expanded="false"
-      menu-button
+      mobile-menu-button
     >
       <svg
         class="mobile-menu__icon"
@@ -40,12 +40,7 @@
   </div>
 </header>
 
-<div
-  class="menu-container"
-  id="mobile-menu"
-  aria-expanded="false"
-  data-menu-toggle
->
+<div class="menu-container" aria-expanded="false" menu-toggle>
   <div>
     <a href="./index.html">
       <svg class="mobile-menu__logo" width="190px" height="85px">
@@ -55,7 +50,7 @@
     <nav>
       <ul class="menu-toggle__list menu">
         <li class="menu-toggle__item">
-          <a class="menu-toggle__link" href="#Program" data-menu-item
+          <a class="menu-toggle__link" href="#Program" menu-toggle-item
             >Program</a
           >
         </li>
@@ -63,8 +58,8 @@
           <a
             class="menu-toggle__link"
             href="#Reviews"
-            data-menu-item
             aria-expanded="false"
+            menu-toggle-item
             >Reviews</a
           >
         </li>
@@ -73,7 +68,7 @@
             class="menu-toggle__link"
             href="#About"
             aria-expanded="false"
-            data-menu-item
+            menu-toggle-item
             >About us</a
           >
         </li>
@@ -82,7 +77,7 @@
             class="menu-toggle__link"
             href="#Contacts"
             aria-expanded="false"
-            data-menu-item
+            menu-toggle-item
             >Contacts</a
           >
         </li>
