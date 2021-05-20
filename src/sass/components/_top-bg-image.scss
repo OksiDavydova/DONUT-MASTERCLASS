@@ -1,7 +1,4 @@
 .top-bg-images {
-  // position: relative;
-  // overflow: auto;
-
   background-image: url(../images/mobile/donut-menu.png), url(../images/mobile/donut-king.png),
     url(../images/mobile/bg-donut-king.png);
 
@@ -9,11 +6,27 @@
   background-position: top 308px center, top left, top;
   background-repeat: no-repeat;
 
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/donut-menu2x.png), url(../images/mobile/donut-king2x.png),
+      url(../images/mobile/bg-donut-king2x.png);
+  }
+
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/donut-king.png), url(../images/tablet/bg-donut-king.png);
 
     background-position: top right 36%, top;
     background-size: 378px, 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/donut-king2x.png),
+        url(../images/tablet/bg-donut-king2x.png);
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -22,5 +35,13 @@
 
     background-position: top 15% left, top right, top;
     background-size: 148px, 723px, 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/spoon2x.png), url(../images/desktop/donut-king2x.png),
+        url(../images/desktop/bg-donut-king2x.png);
+    }
   }
 }
