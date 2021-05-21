@@ -143,11 +143,16 @@
 }
 
 .menu-toggle__link {
+  border-bottom-color: none;
+  padding: 0 0 5px 0;
   color: var(--default-text-color);
-  transition: color var(--animation);
+  transition: color var(--animation), border-bottom-color var(--animation);
 
   &:hover,
   &:focus {
     color: var(--secondary-accent-col);
+    border-bottom-color: var(--primery-accent-color);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
   }
 }
